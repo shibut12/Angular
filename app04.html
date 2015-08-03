@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app04.css">
+</head>
+<body ng-controller="MainController">
+	<div>
+		<div>Name: {{user.name}}</div>
+		<div>Location: {{user.location}}</div>
+		<div>
+			<img ng-src="{{user.avatar_url}}" alt="{{user.name}}" title="{{user.name}}">
+		</div>
+	</div>
+	
+	<h2>{{error}}</h2>
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/app04.js"></script>
+</body>
+</html>

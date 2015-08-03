@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/app03.css">
+</head>
+<body ng-controller="MainController">
+	<h1>{{message}}</h1>
+	<div>
+		<div>First name: {{person.firstName}}</div>
+		<div>Last name: {{person.lastName}}</div>
+		<div>
+			<img ng-src="{{person.imageSrc}}" alt="">
+		</div>
+	</div>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app03.js" title="{{person.firstName}} {{person.lastName}}"></script>
+</body>
+</html> 

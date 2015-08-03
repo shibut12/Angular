@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/app06.css">
+	</head>
+	<body ng-controller="MainController">
+		<h1>{{message}}</h1>
+		<div>{{error}}</div>
+		<div>{{username}}</div>
+		<form name="searchUser" ng-submit="search(username)">
+			<input type="search" placeholder="User name to find" required ng-model="username" />
+			<input type="submit" value="search" />
+			<!--ng-click="search(username)"-->
+		</form>
+		<div ng-include="'app06Include.html'" ng-show="user"></div>
+		<!--javascript goes beyond this line-->
+		<script src="js/angular.min.js"></script>
+		<script src="js/app06.js"></script>
+	</body>
+
+</html>
